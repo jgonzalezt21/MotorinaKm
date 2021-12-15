@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Kilometraje</string>
+    <!--    Activity Splash-->
+    <string name="description">by jgonzalezt</string>
+    <!--    Activity Equipo-->
+    <string name="act_registro_equipo">Registro de Equipo</string>
+    <string name="tv_equipo">Mis Equipos</string>
+    <string name="add_equipo">Añada Equipo</string>
+    <string name="name_equipo">Nombre Equipo</string>
+    <string name="img_equipo">Imagen Equipo</string>
+    <string name="recorrido">Recorrido: 0</string>
+    <string name="recorrido_max">Máximo: 0</string>
+    <string name="recorrido_min">Mínimo: 0</string>
+    <string name="autonomia">Autonomía: 0</string>
+    <string name="total_cargas">Total de Cargas: 0</string>
+    <string name="ahorro">Ahorro: </string>
+    <string name="msg_delete_equipo">¿Eliminar Equipo?</string>
+    <!--    Activity Registro-->
+    <string name="act_lectura">Registros</string>
+    <string name="act_registro_lectura">Registro de Lectura</string>
+    <string name="id_equipo">Identificador del Equipo</string>
+    <string name="lectura_ini">(*_*)</string>
+    <string name="tv_date">Fecha</string>
+    <string name="tv_ahorro" />
+    <string name="msg_delete_lectura">¿Eliminar Lectura?</string>
+    <!--    Activity Promedio-->
+    <string name="act_promedio">Promedio</string>
+    <string name="registro_actual">Registro Actual</string>
+    <!--    Commons-->
+    <string name="save">Guardar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="delete">Eliminar</string>
+    <string name="afirmativo">Si</string>
+    <string name="negativo">No</string>
+    <string name="empty_camp">No deje campos vacios</string>
+    <string name="not_permission">Asignar Permisos</string>
+    <string name="not_elemnts">Sin elementos</string>
+    <string name="not_file">Archivo no encontrado</string>
+    <string name="file_not_compat">Archivo no Compatible</string>
+    <!--    Menu-->
+    <string name="search">Buscar…</string>
+    <string name="exit">Salir</string>
+    <string name="recibir">Cargar Salva</string>
+    <string name="enviar">Salva</string>
+    <string name="saveFile">Datos Exportados</string>
+    <string name="readFile">Datos Importados</string>
+    <string name="msg_save_lecturas">¿Realizar Salva?</string>
+</resources>

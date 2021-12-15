@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_equipo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/img_equipo"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name_equipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_trans"
+            android:padding="5dp"
+            android:text="@string/name_equipo"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_trans"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1">
+
+            <TextView
+                android:id="@+id/tv_recorrido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:text="@string/recorrido"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_recorrido_max"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_recorrido_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:text="@string/recorrido_max"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_autonomia"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_autonomia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:text="@string/autonomia"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_total"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginBottom="2dp"
+                android:text="@string/total_cargas"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/iv_lecturas_equipo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="#00FFFFFF"
+            android:clickable="true"
+            android:contentDescription="@string/delete"
+            android:focusable="true"
+            android:src="@drawable/ic_battery"
+            app:layout_constraintBottom_toTopOf="@+id/iv_edit_equipo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+        <ImageView
+            android:id="@+id/iv_edit_equipo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:background="#00FFFFFF"
+            android:clickable="true"
+            android:contentDescription="@string/delete"
+            android:focusable="true"
+            android:src="@drawable/ic_edit"
+            app:layout_constraintBottom_toTopOf="@+id/iv_delete_equipo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1" />
+
+        <ImageView
+            android:id="@+id/iv_delete_equipo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="#00FFFFFF"
+            android:clickable="true"
+            android:contentDescription="@string/delete"
+            android:focusable="true"
+            android:src="@drawable/ic_delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
